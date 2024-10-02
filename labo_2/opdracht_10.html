@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <title>Web Development I</title>
+</head>
+
+<body>
+<h1>Opdracht 10</h1>
+<p>
+  In de oorspronkelijke code was de nesting van de lijsten incorrect. Een geneste lijst moet altijd binnen een <code>&lt;li&gt;</code> element geplaatst worden.
+</p>
+<p>
+  De incorrecte versie was: <br>
+  <code>
+    &lt;ul&gt;<br>
+    &nbsp;&nbsp;&lt;li&gt;een&lt;/li&gt;<br>
+    &nbsp;&nbsp;&lt;li&gt;twee&lt;/li&gt;<br>
+    &nbsp;&nbsp;&lt;ol&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;jan&lt;/li&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;piet&lt;/li&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;joris&lt;/li&gt;<br>
+    &nbsp;&nbsp;&lt;/ol&gt;<br>
+    &nbsp;&nbsp;&lt;li&gt;vier&lt;/li&gt;<br>
+    &lt;/ul&gt;
+  </code>
+</p>
+<p>
+  De correcte versie is: <br>
+  <code>
+    &lt;ul&gt;<br>
+    &nbsp;&nbsp;&lt;li&gt;een&lt;/li&gt;<br>
+    &nbsp;&nbsp;&lt;li&gt;twee<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;ol&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;jan&lt;/li&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;piet&lt;/li&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;joris&lt;/li&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/ol&gt;<br>
+    &nbsp;&nbsp;&lt;/li&gt;<br>
+    &nbsp;&nbsp;&lt;li&gt;vier&lt;/li&gt;<br>
+    &lt;/ul&gt;
+  </code>
+</p>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <title>Web Development I</title>
+</head>
+
+<body>
+<h1>Opdracht 8</h1>
+<p>
+  In de oorspronkelijke code was de HTML-structuur niet correct genest. Dit kan problemen veroorzaken bij de weergave of interpretatie van de inhoud in de browser.
+</p>
+<p>
+  De incorrecte versie was: <br>
+  <code>&lt;span&gt;hier komt &lt;strong&gt;een&lt;/span&gt;&lt;a href=&quot;&quot;&gt;link&lt;/a&gt;&lt;/strong&gt;&lt;span&gt; te staan&lt;/span&gt;</code>
+</p>
+<p>
+  Dit is niet correct omdat de <code>&lt;strong&gt;</code> tag wordt geopend binnen de <code>&lt;span&gt;</code> tag en pas buiten de <code>&lt;span&gt;</code> tag wordt gesloten.
+</p>
+<p>
+  De correcte versie zou moeten zijn: <br>
+  <code>&lt;span&gt;hier komt &lt;strong&gt;een&lt;/strong&gt;&lt;/span&gt;&lt;a href=&quot;&quot;&gt;link&lt;/a&gt;&lt;span&gt; te staan&lt;/span&gt;</code>
+</p>
+<p>
+  Hierdoor wordt de tekst "een" correct benadrukt en zijn de HTML-elementen correct genest.
+</p>
+</body>
+
+</html>
