@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opdracht jQuery UI Accordion</title>
+</head>
+<body>
+
+<h1>Opdracht 3: jQuery UI Accordion</h1>
+
+<h2>Uit welke elementen bestaat elke accordion section in de DOM-tree?</h2>
+<p>Elke accordion section bestaat uit de volgende elementen:</p>
+<ul>
+  <li><strong>&lt;h3&gt;</strong>: Dit is het header-element dat de titel van de section bevat.</li>
+  <li><strong>&lt;div&gt;</strong>: Dit is het content-element dat de inhoud van de section bevat.</li>
+</ul>
+<p>Voorbeeld van een accordion section:</p>
+<pre>&lt;h3&gt;Section 1&lt;/h3&gt;
+&lt;div&gt;
+    &lt;p&gt;Content of section 1&lt;/p&gt;
+&lt;/div&gt;
+    </pre>
+
+<h2>Welke wijzigingen gebeuren er in de DOM-tree als je op een gesloten section klikt?</h2>
+<p>Wanneer je op een gesloten accordion section klikt, gebeuren de volgende wijzigingen:</p>
+<ul>
+  <li>De klasse van de geopende section wordt <code>ui-accordion-header-active</code>. De gesloten section krijgt de klasse <code>ui-accordion-header</code>.</li>
+  <li>Het <code>&lt;div&gt;</code>-element van de geopende section krijgt <code>style="display: block;"</code>. Het <code>&lt;div&gt;</code>-element van de gesloten section krijgt <code>style="display: none;"</code>.</li>
+</ul>
+
+<h2>Hoe worden de extra attributen aan de oorspronkelijke elementen toegevoegd?</h2>
+<p>De extra attributen worden dynamisch toegevoegd door de jQuery UI library met JavaScript wanneer de accordion widget wordt geïnitialiseerd.</p>
+
+</body>
+</html>

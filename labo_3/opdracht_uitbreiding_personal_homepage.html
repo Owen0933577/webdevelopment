@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barack Obama - Persoonlijke Homepage</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #1a237e;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        section {
+            background-color: white;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #1a237e;
+            border-bottom: 2px solid #1a237e;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #3f51b5;
+            margin-top: 30px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .profile-img {
+            width: 200px;
+            display: block;
+            margin: 20px auto;
+            border: 4px solid white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        .media-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+        .media-item {
+            flex: 1 1 200px;
+            max-width: 200px;
+        }
+        .media-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        a {
+            color: #3f51b5;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #1a237e;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            .media-item {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Barack Obama</h1>
+</header>
+
+<div class="container">
+
+    <!-- Persoonlijke informatie -->
+    <section>
+        <h2>Persoonlijke Informatie</h2>
+        <img src="fotos_personal_homepage/Barack_Obama.png" alt="Profielfoto van Barack Obama" class="profile-img">
+        <p><strong>Volledige Naam:</strong> Barack Hussein Obama II</p>
+        <p><strong>Adres:</strong> Washington, D.C., Verenigde Staten</p>
+        <p><strong>Telefoonnummer:</strong> (niet openbaar)</p>
+        <p><strong>E-mailadres:</strong> <a href="mailto:info@obama.org">info@obama.org</a></p>
+    </section>
+
+    <!-- Hobby's -->
+    <section>
+        <h2>Hobby's</h2>
+        <ul>
+            <li><strong>Lezen:</strong> Barack Obama is een fervent lezer en houdt van boeken over geschiedenis, politiek en fictie. Zijn boekenkast bevat werken van auteurs zoals Toni Morrison en Hemingway.</li>
+            <li><strong>Sport:</strong> Hij houdt van basketbal en golf. Hij speelt vaak met vrienden en teamgenoten. Voor meer informatie over zijn liefde voor sport, kijk op <a href="https://www.nbcnews.com/news/us-news/how-barack-obama-stayed-active-while-being-president-n960281" target="_blank">NBC News</a>.</li>
+            <li><strong>Fotografie:</strong> Hij heeft een passie voor fotografie, vooral voor het vastleggen van belangrijke momenten in zijn leven en politieke carrière.</li>
+        </ul>
+    </section>
+
+    <!-- Favorieten -->
+    <section>
+        <h2>Favorieten</h2>
+
+        <h3>Favoriete Artiesten</h3>
+        <ul class="media-list">
+            <li class="media-item">
+                <img src="fotos_personal_homepage/bruce-springsteen.png" alt="Bruce Springsteen">
+                <a href="https://www.springsteen.net" target="_blank">Bruce Springsteen</a>
+            </li>
+            <li class="media-item">
+                <img src="fotos_personal_homepage/michael-jackson.png" alt="Michael Jackson">
+                <a href="https://www.michaeljackson.com" target="_blank">Michael Jackson</a>
+            </li>
+            <li class="media-item">
+                <img src="fotos_personal_homepage/Beyoncé.png" alt="Beyoncé">
+                <a href="https://www.beyonce.com" target="_blank">Beyoncé</a>
+            </li>
+        </ul>
+
+        <h3>Favoriete Muziek</h3>
+        <ul class="media-list">
+            <li class="media-item">
+                <img src="fotos_personal_homepage/Born-to-Run-album.png" alt="Born to Run album">
+                <a href="https://soundcloud.com/brucespringsteen/born-to-run-1" target="_blank">"Born to Run" van Bruce Springsteen</a>
+            </li>
+            <li class="media-item">
+                <img src="fotos_personal_homepage/thriller-album-michaeljackson.png" alt="Thriller album">
+                <a href="https://soundcloud.com/mjimmortal/thriller" target="_blank">"Thriller" van Michael Jackson</a>
+            </li>
+        </ul>
+
+        <h3>Favoriete Films</h3>
+        <ol class="media-list">
+            <li class="media-item">
+                <img src="fotos_personal_homepage/thegodfather.png" alt="The Godfather">
+                <a href="https://www.imdb.com/title/tt0068646/" target="_blank">The Godfather</a>
+            </li>
+            <li class="media-item">
+                <img src="fotos_personal_homepage/theshawshankredemption.png" alt="The Shawshank Redemption">
+                <a href="https://www.imdb.com/title/tt0111161/" target="_blank">The Shawshank Redemption</a>
+            </li>
+            <li class="media-item">
+                <img src="fotos_personal_homepage/fightclub.png" alt="Fight Club">
+                <a href="https://www.imdb.com/title/tt0137523/" target="_blank">Fight Club</a>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Prognose Tabel -->
+    <section>
+        <h2>Prognose - Verwachte Scores</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Vak</th>
+                <th>Mijn Punten</th>
+                <th>Lucas</th>
+                <th>Thibo</th>
+                <th>Tomas</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Webontwikkeling</td>
+                <td>80</td>
+                <td>85</td>
+                <td>78</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>Databanken</td>
+                <td>75</td>
+                <td>82</td>
+                <td>80</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>Netwerken</td>
+                <td>85</td>
+                <td>88</td>
+                <td>76</td>
+                <td>84</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+</div>
+
+</body>
+</html>
