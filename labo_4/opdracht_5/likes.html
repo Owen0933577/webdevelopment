@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barack Obama - Likes</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #1a237e;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        section {
+            background-color: white;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #1a237e;
+            border-bottom: 2px solid #1a237e;
+            padding-bottom: 10px;
+        }
+        h3 {
+            color: #3f51b5;
+            margin-top: 30px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        .media-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+        .media-item {
+            flex: 1 1 200px;
+            max-width: 200px;
+        }
+        .media-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        a {
+            color: #3f51b5;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .media-item {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Likes</h1>
+</header>
+
+<div class="container">
+    <nav>
+        <ul>
+            <li><a href="index.html">Terug naar Home</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Favorieten</h2>
+
+        <h3>Favoriete Artiesten</h3>
+        <ul class="media-list">
+            <li class="media-item">
+                <img src="../../labo_3/fotos_personal_homepage/bruce-springsteen.png" alt="Bruce Springsteen">
+                <a href="https://www.springsteen.net" target="_blank">Bruce Springsteen</a>
+            </li>
+            <li class="media-item">
+                <img src="../../labo_3/fotos_personal_homepage/michael-jackson.png" alt="Michael Jackson">
+                <a href="https://www.michaeljackson.com" target="_blank">Michael Jackson</a>
+            </li>
+            <li class="media-item">
+                <img src="../../labo_3/fotos_personal_homepage/Beyoncé.png" alt="Beyoncé">
+                <a href="https://www.beyonce.com" target="_blank">Beyoncé</a>
+            </li>
+        </ul>
+
+        <h4>Favoriete Muziek</h4>
+        <ul class="media-list">
+            <li class="media-item">
+                <img src="../../labo_3/fotos_personal_homepage/Born-to-Run-album.png" alt="Born to Run album">
+                <a href="https://soundcloud.com/brucespringsteen/born-to-run-1" target="_blank">"Born to Run" van Bruce Springsteen</a>
+            </li>
+            <li class="media-item">
+                <img src="../../labo_3/fotos_personal_homepage/thriller-album-michaeljackson.png" alt="Thriller album">
+                <a href="https://soundcloud.com/mjimmortal/thriller" target="_blank">"Thriller" van Michael Jackson</a>
+            </li>
+        </ul>
+
+        <h5>Favoriete Films</h5>
+        <ol class="media-list">
+            <li class="media-item">
+                <img src="../../labo_3/fotos_personal_homepage/thegodfather.png" alt="The Godfather">
+                <a href="https://www.imdb.com/title/tt0068646/" target="_blank">The Godfather</a>
+            </li>
+            <li class="media-item">
+                <img src="../../labo_3/fotos_personal_homepage/theshawshankredemption.png" alt="The Shawshank Redemption">
+                <a href="https://www.imdb.com/title/tt0111161/" target="_blank">The Shawshank Redemption</a>
+            </li>
+            <li class="media-item">
+                <img src="../../labo_3/fotos_personal_homepage/fightclub.png" alt="Fight Club">
+                <a href="https://www.imdb.com/title/tt0137523/" target="_blank">Fight Club</a>
+            </li>
+        </ol>
+    </section>
+</div>
+</body>
+</html>
