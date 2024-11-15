@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Opdracht 2</title>
+  <link rel="stylesheet" href="../css_bestanden/opdracht_2.css">
+</head>
+<body>
+<h1>Opdracht 2</h1>
+
+<h2>1. Zijn alle eigenschappen nodig?</h2>
+<table>
+  <thead>
+  <tr>
+    <th>Eigenschap</th>
+    <th>Noodzakelijkheid</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td><code>border-collapse: collapse;</code></td>
+    <td>Ja</td>
+  </tr>
+  <tr>
+    <td><code>text-align: left;</code></td>
+    <td>Ja</td>
+  </tr>
+  <tr>
+    <td><code>width: 100%;</code></td>
+    <td>Ja</td>
+  </tr>
+  <tr>
+    <td><code>font: normal 12px/150% Arial, Helvetica, sans-serif;</code></td>
+    <td>Ja</td>
+  </tr>
+  <tr>
+    <td><code>background: #fff;</code></td>
+    <td>Ja</td>
+  </tr>
+  <tr>
+    <td><code>overflow: hidden;</code></td>
+    <td>Ja</td>
+  </tr>
+  <tr>
+    <td><code>border: 1px solid #006699;</code></td>
+    <td>Ja</td>
+  </tr>
+  <tr>
+    <td><code>-webkit-border-radius: 3px;</code><br><code>-moz-border-radius: 3px;</code><br><code>border-radius: 3px;</code></td>
+    <td>Nee</td>
+  </tr>
+  </tbody>
+</table>
+
+<h2>2. Zijn de browser-voorvoegsels nog steeds nodig?</h2>
+<p>De CSS-generator bevat vendor-voorvoegsels voor sommige eigenschappen, zoals <code>-webkit-gradient</code> en <code>-moz-linear-gradient</code>. Deze voorvoegsels waren vroeger nodig om consistent gedrag tussen verschillende webbrowsers te garanderen, omdat zij de niet-geprefixte versies van de CSS-eigenschappen niet universeel ondersteunden.</p>
+<p>In moderne browsers is het gebruik van vendor-voorvoegsels echter over het algemeen niet meer nodig, omdat de grote browsers (Chrome, Firefox, Safari, Edge) nu ingebouwde ondersteuning hebben voor de niet-geprefixte versies van deze eigenschappen.</p>
+<p>Daarom kunt u de vendor-voorvoegsels veilig verwijderen uit de gegenereerde CSS, aangezien ze voor de meerderheid van de gebruikers niet meer nodig zijn.</p>
+</body>
+</html>

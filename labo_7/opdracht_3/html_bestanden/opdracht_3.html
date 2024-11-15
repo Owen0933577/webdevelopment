@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Opdracht 3</title>
+</head>
+<body>
+<h1>Opdracht 3</h1>
+
+<p>De generator geeft de <code>&lt;tr&gt;</code> elementen van elke even rij een 'alt' class. De generator voorziet de cellen in deze rijen van een andere achtergrondkleur, te zien in de regel:</p>
+<pre><code>.datagrid table tbody .alt td { background: #E1EEF4; color: #00496B; }</code></pre>
+
+<p>Daarnaast heb ik enkele cellen voorzien van een 'onbekend' class, met de volgende CSS regel:</p>
+<pre><code>.onbekend { background-color: red; }</code></pre>
+
+<p>Het effect van de 'onbekend' class werkt niet op cellen binnen een <code>&lt;tr&gt;</code> met de 'alt' class. Dit komt doordat de specificiteit van de '.datagrid table tbody .alt td' rule hoger is dan de '.onbekend' rule. De 'alt' class heeft meer selectorkracht en overschrijft daarom de rode achtergrond.</p>
+</body>
+</html>
