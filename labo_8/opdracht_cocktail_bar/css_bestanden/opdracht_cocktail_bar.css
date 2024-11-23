@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.cocktail-header {
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.cocktail-header img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 0; /* Removed the gap */
+    width: 100%;
+    flex: 1;
+}
+
+.origin-section {
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    position: relative;
+}
+
+.origin-section h1 {
+    color: #007e7e;
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.origin-section h2 {
+    color: #007e7e;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+.quote-box {
+    background-color: #d5e9e9;
+    padding: 15px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.origin-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.origin-section ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.origin-section ul li::before {
+    content: "•";
+    position: absolute;
+    left: 8px;
+    color: #007e7e;
+}
+
+.weekly-specials {
+    text-align: center;
+    background: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.weekly-specials-header {
+    background: url('../afbeeldingen/cocktail.gif') repeat;
+    padding: 15px;
+    margin-bottom: 0;
+}
+
+.weekly-specials h1 {
+    color: black;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.drink {
+    padding: 10px 0;
+}
+
+.weekly-specials h2 {
+    font-size: 1.3em;
+    color: red;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.weekly-specials p {
+    text-align: center;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.weekly-specials img {
+    display: block;
+    margin: 0 auto;
+}
+
+.footnote {
+    font-size: 0.6em;
+    text-align: center;
+    margin-top: auto;
+    padding: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.4em;
+    text-align: center;
+}
+
+.origin-section ul li:first-child {
+    font-style: italic;  /* Remove italic (cursive) from the list item */
+}
+
+.origin-section ul li span {
+    font-weight: bold;  /* Apply bold only to the span */
+    font-style: normal;  /* Ensure the span doesn't inherit italic styling */
+}

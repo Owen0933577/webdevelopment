@@ -1,0 +1,19 @@
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+section {
+    width: 50%;
+    float: left;
+    padding: 10px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}

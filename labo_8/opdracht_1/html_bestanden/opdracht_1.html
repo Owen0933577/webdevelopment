@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Opdracht 1</title>
+</head>
+<body>
+<h1>Opdracht 1</h1>
+
+<h2>Analyse verschillende display waardes</h2>
+
+<div class="property-block">
+  <h3>Display: block</h3>
+  <ul>
+    <li>Width en height worden gerespecteerd</li>
+    <li>Elk element neemt een volledige nieuwe regel in beslag</li>
+    <li>Elementen stapelen zich verticaal op elkaar</li>
+  </ul>
+</div>
+
+<div class="property-block">
+  <h3>Display: inline</h3>
+  <ul>
+    <li>Width en height worden genegeerd</li>
+    <li>Elementen worden als woorden op een regel geplaatst</li>
+    <li>Alleen horizontale padding en margin worden gerespecteerd</li>
+  </ul>
+</div>
+
+<div class="property-block">
+  <h3>Display: inline-block</h3>
+  <ul>
+    <li>Width en height worden gerespecteerd</li>
+    <li>Elementen worden als blokken naast elkaar geplaatst waar mogelijk</li>
+    <li>Combineert eigenschappen van zowel block als inline</li>
+  </ul>
+</div>
+
+<h3>Width en Height negeren:</h3>
+<p>Bij <code>display: inline</code> worden de width en height eigenschappen genegeerd. Dit komt omdat inline elementen zich gedragen als tekst en alleen de ruimte innemen die ze nodig hebben voor hun inhoud.</p>
+
+<h3>Als woorden op een pagina:</h3>
+<p>De elementen worden als woorden op een pagina gezet bij:</p>
+<ul>
+  <li><code>display: inline</code> - zonder dimensies te respecteren</li>
+  <li><code>display: inline-block</code> - met behoud van opgegeven dimensies</li>
+</ul>
+</body>
+</html>

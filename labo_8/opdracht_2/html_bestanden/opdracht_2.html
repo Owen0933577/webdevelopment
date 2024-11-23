@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Opdracht 2</title>
+</head>
+<body>
+<h1>Opdracht 2</h1>
+
+<h2>Waarom zijn er lege ruimtes tussen de blokken?</h2>
+
+<div class="example">
+  <ul>
+    <li>HTML witruimte tussen inline-block elementen wordt geïnterpreteerd als een spatie in de weergave</li>
+    <li>Dit gebeurt omdat inline-block elementen zich gedragen als woorden in een tekst</li>
+    <li>HTML behandelt witruimte tussen deze elementen net zoals witruimte tussen woorden</li>
+  </ul>
+</div>
+
+<h3>Oplossingen voor het verwijderen van de witruimte:</h3>
+
+<div class="solution">
+  <h4>1. HTML elementen direct na elkaar plaatsen:</h4>
+  <div class="code">
+    &lt;div class="area"&gt;01&lt;/div&gt;&lt;div class="area"&gt;02&lt;/div&gt;
+  </div>
+</div>
+
+<div class="solution">
+  <h4>2. Negatieve margin gebruiken:</h4>
+  <div class="code">
+    .area {
+    margin-right: -4px;
+    }
+  </div>
+</div>
+
+<div class="solution">
+  <h4>3. Font-size: 0 op de parent zetten:</h4>
+  <div class="code">
+    parent {
+    font-size: 0;
+    }
+    .area {
+    font-size: 16px;
+    }
+  </div>
+</div>
+
+<h2>Responsive Gedrag</h2>
+<div class="example">
+  <p>De blokken worden automatisch verdeeld over meerdere regels omdat:</p>
+  <ul>
+    <li>Inline-block elementen zich gedragen als woorden in een tekst</li>
+    <li>Als er niet genoeg ruimte is op een regel, springt het volgende element automatisch naar de volgende regel</li>
+    <li>Dit gedrag is ingebouwd in de browser en heeft geen extra CSS voor basic responsive layout</li>
+  </ul>
+</div>
+</body>
+</html>

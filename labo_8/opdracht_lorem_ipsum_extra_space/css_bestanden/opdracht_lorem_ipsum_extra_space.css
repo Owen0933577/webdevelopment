@@ -1,0 +1,28 @@
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+section {
+    width: calc(50% - 10px);
+    float: left;
+    padding: 10px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+section:first-child {
+    margin-right: 10px;
+}
+
+section:last-child {
+    margin-left: 10px;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+

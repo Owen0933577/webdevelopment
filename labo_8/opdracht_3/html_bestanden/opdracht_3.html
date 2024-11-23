@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 3</title>
+</head>
+<body>
+<h1>Opdracht 3</h1>
+
+<h2>Waarom staat de tekst horizontaal gecentreerd?</h2>
+<p>De tekst staat horizontaal gecentreerd door de CSS-regel <code>text-align: center</code> op het <code>div</code>-element.</p>
+
+<h2>Vertical-align: center werking</h2>
+<ul>
+    <li><code>vertical-align: center</code> heeft geen effect omdat deze property niet bestaat</li>
+    <li><code>vertical-align: middle</code> werkt niet voor het centreren van tekst binnen een element</li>
+    <li><code>vertical-align</code> bepaalt hoe een element zich uitlijnt ten opzichte van andere elementen in dezelfde regel, niet de inhoud binnen het element zelf</li>
+</ul>
+
+<h2>Simpele manieren voor verticale centrering:</h2>
+
+<h3>Voor 1 regel tekst:</h3>
+<p>Zet de <code>line-height</code> gelijk aan de <code>height</code> van het element:</p>
+<pre>
+.area {
+  height: 100px;
+  line-height: 100px;
+}
+  </pre>
+
+<h3>Voor meerdere regels tekst:</h3>
+<p>Gebruik <code>display: table-cell</code> met <code>vertical-align: middle</code>:</p>
+<pre>
+.area {
+  display: table-cell;
+  vertical-align: middle;
+}
+  </pre>
+
+<h2>CSS Specificity vraag</h2>
+<p>De class <code>tall</code> krijgt voorrang omdat:</p>
+<ul>
+    <li>Beide regels hebben dezelfde specificiteit (class selector)</li>
+    <li>De regel voor class <code>tall</code> komt later in het CSS-bestand</li>
+    <li>Bij gelijke specificiteit wint de laatst gedefinieerde regel</li>
+</ul>
+</body>
+</html>
