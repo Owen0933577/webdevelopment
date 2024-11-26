@@ -59,9 +59,20 @@ body {
 
 .quote-box {
     background-color: #d5e9e9;
-    padding: 15px;
+    background-image: url("../afbeeldingen/background.gif");
+    background-position: left top;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    padding: 15px 15px 15px 100px;
     margin: 20px 0;
     font-style: italic;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.quote-box p {
+    margin: 0;
 }
 
 .origin-section ul {
@@ -144,7 +155,7 @@ a:hover {
 }
 
 .copyright {
-    position: absolute;
+    position: relative;
     bottom: 10px;
     right: 10px;
     font-size: 0.4em;
@@ -152,10 +163,10 @@ a:hover {
 }
 
 .origin-section ul li:first-child {
-    font-style: italic;  /* Remove italic (cursive) from the list item */
+    font-style: italic;
 }
 
 .origin-section ul li span {
-    font-weight: bold;  /* Apply bold only to the span */
-    font-style: normal;  /* Ensure the span doesn't inherit italic styling */
+    font-weight: bold;
+    font-style: normal;
 }
