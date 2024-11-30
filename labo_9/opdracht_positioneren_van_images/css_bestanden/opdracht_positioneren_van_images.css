@@ -1,0 +1,38 @@
+body, main, article, h2, p, img {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    box-sizing: border-box;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+article {
+    border: 2px solid #333;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+article p {
+    font-size: 1.25em;
+}
+
+article:nth-child(odd) img {
+    float: left;
+    margin-right: 10px;
+}
+
+article:nth-child(even) img {
+    float: right;
+    margin-left: 10px;
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+}

@@ -32,7 +32,7 @@ body {
 .columns {
     display: grid;
     grid-template-columns: 70% 30%;
-    gap: 0; /* Removed the gap */
+    gap: 0;
     width: 100%;
     flex: 1;
 }
