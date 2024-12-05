@@ -1,0 +1,58 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.profile-image {
+    max-width: 250px;
+    border: 5px solid white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header {
+    background: linear-gradient(135deg, #4A90E2, #50C878);
+    position: relative;
+    overflow: hidden;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+}
+
+#over-mij, #carriere, #familie, #filantropie {
+    transition: background-color 0.3s ease;
+}
+
+#over-mij:hover, #carriere:hover, #familie:hover, #filantropie:hover {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.social-icons a {
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffc107 !important;
+}
+
+@media (max-width: 768px) {
+    .profile-image {
+        max-width: 200px;
+    }
+}

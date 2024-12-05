@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin: 20px auto;
+}
+
+.bg-light {
+    background-color: lightgray;
+    height: 180px;
+}
+
+.bg-secondary {
+    background-color: darkgray;
+    height: 180px;
+}
+
+.row {
+    margin-bottom: 30px;
+}
